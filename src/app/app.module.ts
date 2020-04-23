@@ -2,13 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MyLibModule } from 'projects/my-lib/src/public-api';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MatTabsModule
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
